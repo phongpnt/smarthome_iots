@@ -1,0 +1,37 @@
+{
+  "firmware_version": "2.0.0",
+  "wifi": {
+    "ssid": "Ultra_Maf",
+    "password": "12347890",
+    "connect_timeout_sec": 15
+  },
+  "api_server": {
+    "base_url": "http://iots.bhbl.vn",
+    "token_endpoint": "/login/Token",
+    "schedule_endpoint": "/api/Schedules/device/",
+    "username": "pntphong@gmail.com",
+    "password": "123456"
+  },
+  "mqtt": {
+    "server": "rabbitmq.bhbl.vn",
+    "port": 1883,
+    "user": "iots",
+    "password": "Tintin@123",
+    "keepalive": 120,
+    "subscribe_topic": "smartplug/status",
+    "schedule_topic": "smartplug/schedule"
+  },
+  "device": {
+    "relay_pin": 23,
+    "i2c_scl_pin": 21,
+    "i2c_sda_pin": 25
+  },
+  "data_logging": {
+    "filepath": "/data/telemetry.csv",
+    "max_records": 1000
+  },
+  "ota": {
+    "check_url": "",
+    "enabled": false
+  }
+}
